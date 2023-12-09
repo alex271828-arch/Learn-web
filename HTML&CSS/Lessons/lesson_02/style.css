@@ -1,0 +1,32 @@
+.serif {
+  font-family: serif;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+.monospace {
+  font-family: monospace;
+}
+.cursive {
+  font-family: cursive;
+}
+.fantasy {
+  font-family: fantasy;
+}
+
+p{
+    font-size:30px;
+}
+
+.light{
+    font-weight: 100;
+}
+.normal{
+    font-weight: 400;
+}
+.bold{
+    font-weight: 700;
+}
+.extra-bold{
+    font-weight: 900;
+}
