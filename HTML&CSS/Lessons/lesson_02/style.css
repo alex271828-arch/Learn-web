@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
 .serif {
   font-family: serif;
 }
@@ -14,19 +16,44 @@
   font-family: fantasy;
 }
 
-p{
-    font-size:30px;
+p {
+  font-size: 30px;
 }
 
-.light{
-    font-weight: 100;
+.light {
+  font-weight: 100;
 }
-.normal{
-    font-weight: 400;
+.normal {
+  font-weight: 400;
 }
-.bold{
-    font-weight: 700;
+.bold {
+  font-weight: 700;
 }
-.extra-bold{
-    font-weight: 900;
+.extra-bold {
+  font-weight: 900;
+}
+
+.style-normal {
+  font-style: normal;
+}
+
+.style-italic {
+  font-style: italic;
+}
+
+.font-text {
+  font-size: 20px;
+  font-family: "Silkscreen", sans-serif;
+}
+
+.color-expample {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(50, 100, 100);
+}
+
+.color-hex-expample {
+  width: 300px;
+  height: 300px;
+  background-color: #cbd322;
 }
