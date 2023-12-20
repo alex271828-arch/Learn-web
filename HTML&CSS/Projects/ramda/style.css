@@ -39,8 +39,41 @@ body {
   padding: 20px 32px;
   display: inline-block;
   border-left: 1px solid #fff;
+  transition: 0.5s;
 }
 
 .navbar-menu a:last-child {
   border-right: 1px solid #fff;
+}
+
+.navbar-menu a:hover {
+  background-color: #222f3a;
+}
+
+main.container {
+  margin-top: 50px;
+}
+
+.sidebar-menu a {
+  color: #485863;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  text-decoration: none;
+  display: block;
+  padding: 25px 44px;
+  transition: 0.5s;
+}
+
+
+.sidebar-menu{
+    border: 1px solid #000;
+    width: 25%;
+}
+
+.sidebar-menu a:hover{
+    background: #DBDBDB;
+    color: black;
+    padding-left: 60px;
 }
