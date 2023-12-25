@@ -113,13 +113,36 @@ footer.container {
   background: rgba(99, 105, 110, 0.48);
   padding: 20px 40px;
   margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-menu a {
+  display: inline-block;
   color: #0c1927;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
   text-decoration: none;
+  transition: 0.5s;
+  padding-bottom: 5px;
+}
+
+.footer-menu a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-menu a:hover {
+  color: #3181a6;
+  border-bottom: 1px solid #3181a6;
+}
+
+.copyright {
+  color: #010101;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
