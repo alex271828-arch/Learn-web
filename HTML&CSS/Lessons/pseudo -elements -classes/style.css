@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.link-hover {
+  display: inline-block;
+  color: black;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-color: lime;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+
+.link-hover:hover {
+  color: lime;
+  background-color: black;
+  border-color: lime;
+}
+
+.list > span {
+  display: inline-block;
+  background-color: black;
+  color: lime;
+  border: 2px solid lime;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.child-elements > span:first-child {
+  color: black;
+  background-color: lime;
+  border-color: black;
+}
+
+.child-elements > span:last-child {
+  color: grey;
+  background-color: rgb(214, 156, 97);
+  border-color: grey;
+}
+
+.nth-child-n-elements > span:nth-child(3) {
+  color: black;
+  background-color: lime;
+  border-color: black;
+}
+
+.nth-child-even-elements > span:nth-child(even) {
+  color: black;
+  background-color: lime;
+  border-color: black;
+}
+
+.nth-child-odd-elements > span:nth-child(2n + 1) {
+  color: black;
+  background-color: lime;
+  border-color: black;
+}
+
+.child-not-elements > span:not(:last-child) {
+  margin-right: 15px;
+}
+
+/* Pseudoelements */
+
+.before-example,
+.after-example {
+  display: inline-block;
+}
+
+.before-example::before,
+.after-example::after {
+  content: "&";
+  /* without content style ::before and ::after will not working */
+  background-color: red;
+  color: wheat;
+  margin-right: 10px;
+  padding: 20px;
+  margin-left: 10px;
+}

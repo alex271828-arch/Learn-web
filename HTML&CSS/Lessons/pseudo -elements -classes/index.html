@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudoclasses and pseudoelements</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Pseudoclasses and pseudoelements</h1>
+    <h2>Pseudoclasses</h2>
+    <ul>
+      <li>
+        <h3>:hover</h3>
+        <a class="link-hover" href="#">Hover on me</a>
+      </li>
+      <li>
+        <h3>:first-child & :last-child</h3>
+        <div class="list child-elements">
+          <span>first</span>
+          <span>second</span>
+          <span>third</span>
+          <span>fourth</span>
+          <span>fifth</span>
+        </div>
+      </li>
+      <li>
+        <h3>:nth-child(3)</h3>
+        <div class="list nth-child-n-elements">
+          <span>first</span>
+          <span>second</span>
+          <span>third</span>
+          <span>fourth</span>
+          <span>fifth</span>
+        </div>
+      </li>
+      <li>
+        <h3>:nth-child(even) or :nth-child(2n)</h3>
+        <div class="list nth-child-even-elements">
+          <span>first</span>
+          <span>second</span>
+          <span>third</span>
+          <span>fourth</span>
+          <span>fifth</span>
+        </div>
+      </li>
+      <li>
+        <h3>:nth-child(odd) or :nth-child(2n+1)</h3>
+        <div class="list nth-child-odd-elements">
+          <span>first</span>
+          <span>second</span>
+          <span>third</span>
+          <span>fourth</span>
+          <span>fifth</span>
+        </div>
+      </li>
+      <li>
+        <h3>:not(:last-child)</h3>
+        <div class="list child-not-elements">
+          <span>first</span>
+          <span>second</span>
+          <span>third</span>
+          <span>fourth</span>
+          <span>fifth</span>
+        </div>
+      </li>
+    </ul>
+
+    <h2>Pseudoelements</h2>
+    <ul>
+      <li>
+        <h3>::before</h3>
+        <p class="before-example">Before me you can see something</p>
+      </li>
+      <li>
+        <h3>::after</h3>
+        <p class="after-example">After me you can see something</p>
+      </li>
+    </ul>
+  </body>
+</html>
