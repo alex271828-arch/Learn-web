@@ -16,10 +16,95 @@
   */
 }
 
-.absolute{
-    background: blue;
-    position: absolute;
-    /* коли ти задаєш абсолютне позиціонування, елемент вирізається з потоку документу, це означає, що інші елементи думають, що твого вирізанного елементу більше не існує, відповідно, вони займають його місце. Це надає нам можливість вирівнювати абсолютний елемент відносно всієї сторінки, або відносно найближчого батька з властивістю position: relateive; or position: absolute; */
-    bottom: 300px;
-    right: 100px;
+.absolute {
+  background: blue;
+  position: absolute;
+  /* коли ти задаєш абсолютне позиціонування, елемент вирізається з потоку документу, це означає, що інші елементи думають, що твого вирізанного елементу більше не існує, відповідно, вони займають його місце. Це надає нам можливість вирівнювати абсолютний елемент відносно всієї сторінки, або відносно найближчого батька з властивістю position: relateive; or position: absolute; */
+  bottom: 300px;
+  right: 100px;
+}
+
+.parent {
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+  border: 5px solid black;
+  position: relative;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 2px solid blue;
+  position: absolute;
+  /*
+    для того, щоб вирівняти якийсь дочірній елемент всередині батьківського елементу (відносно батьківсього елементу), потрбітно обовʼязково задати дитині абсолют,а батьку задати релейтів це допоможе нам вирівняти дитину всередині батька.
+
+  */
+  right: 50px;
+  top: 40px;
+}
+
+/* ================== */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.face {
+  margin: 50px auto;
+  width: 500px;
+  height: 500px;
+  background-color: brown;
+  border-radius: 20%;
+  position: relative;
+}
+
+.eye {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+}
+
+.left-eye {
+  left: 100px;
+}
+
+.right-eye {
+  right: 100px;
+}
+
+.pupil{
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.mouth{
+  height: 50px;
+  width:300px;
+  background-color: black;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  text-align: center;
+}
+
+.teeth{
+  width: 50px;
+  height: 40px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 0 0 15px 15px;
+
 }
