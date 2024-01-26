@@ -58,7 +58,7 @@
   width: 500px;
   height: 500px;
   background-color: brown;
-  border-radius: 20%;
+  border-radius: 20% 20% 45% 45%;
   position: relative;
 }
 
@@ -79,7 +79,7 @@
   right: 100px;
 }
 
-.pupil{
+.pupil {
   height: 15px;
   width: 15px;
   background-color: white;
@@ -89,9 +89,9 @@
   left: 18px;
 }
 
-.mouth{
+.mouth {
   height: 50px;
-  width:300px;
+  width: 300px;
   background-color: black;
   border-radius: 15px;
   position: absolute;
@@ -100,11 +100,53 @@
   text-align: center;
 }
 
-.teeth{
+.teeth {
   width: 50px;
   height: 40px;
   background-color: white;
   display: inline-block;
   border-radius: 0 0 15px 15px;
+}
 
+.eyebrow {
+  width: 100px;
+  height: 15px;
+  background-color: black;
+  border-radius: 7px;
+  position: absolute;
+  top: 70px;
+}
+
+.left-eyebrow {
+  left: 70px;
+}
+
+.right-eyebrow {
+  right: 70px;
+}
+
+.ear {
+  width: 20px;
+  height: 100px;
+  background-color: pink;
+  position: absolute;
+  top: 150px;
+}
+
+.left-ear {
+  border-radius: 15px 0 0 15px;
+  left: -20px
+}
+
+.right-ear {
+  border-radius: 0 15px 15px 0;
+  right: -20px
+}
+
+
+.nose{
+  width: 50px;
+  height: 100px;
+  background-color: #000;
+  border-radius: 50px;
 }
