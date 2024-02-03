@@ -17,5 +17,43 @@ body {
 }
 
 header {
-    padding-top: 50px
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-texts > span {
+  font-family: "Roboto", sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+}
+
+.logo-texts > span:last-child {
+  font-size: 18px;
+}
+
+.logo-texts {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.header-contacts > a {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
 }
