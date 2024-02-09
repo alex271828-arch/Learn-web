@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -56,4 +58,44 @@ header {
   color: #fff;
   text-decoration: none;
   text-align: right;
+}
+
+main {
+  padding-top: 17px;
+}
+
+.tours-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.tour-item {
+  text-align: center;
+  width: 300px;
+}
+
+.tour-item > h2 {
+  margin-top: 20px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: capitalize;
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  color: #fff;
 }
