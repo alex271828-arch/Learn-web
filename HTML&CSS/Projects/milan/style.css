@@ -126,6 +126,16 @@ main {
   color: #f26522;
 }
 
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.tour-item:hover .tour-price-container {
+  bottom: 5px;
+
+}
+
 .tour-price-container {
   background-color: #f26522;
   padding: 30px 16px 10px;
@@ -135,7 +145,11 @@ main {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #fff;
-  position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -60px;
+  transition: 0.5s;
 }
 
 .tour-price-container > .price {
