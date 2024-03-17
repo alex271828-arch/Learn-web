@@ -1,0 +1,33 @@
+.reg-form {
+  width: 400px;
+  margin: 0 auto;
+  background-color: grey;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  box-shadow: 3px 2px 5px black;
+}
+
+.reg-form input {
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 0;
+}
+
+.reg-form button {
+  margin-top: 15px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 25px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 
+       * <form></form> - тег, який створює контейнер для всіх елементів форми
+
+       * <label></label> - тег, який створює текстову мітку для конкретного поля вводу
+
+       * <input type="text" placeholder="some text"> - тег, який створює інтерактивне поле для вводу інформації. Цей тег має багато різниї типів даних для вводу, які ми прописуємо у атрибуті type, наприклад: text (ввід звичайного тексту), password(ввід паролю, де кожен символ заміняється на крапку), email (ввід пошти, перевіряє правильність), number(ввід числових даних), date(ввід дати), range(ползунок для вибору діапазону), radio (перемикач), checkbox(галочка). Атрибут placeholder використовється щоб вказати користувачу, яка інформація очікується в цьому полі, текст пропадає як тільки користувач почне писати.
+
+       *  <button type="submit">Register</button> - кнопка, яка повинна відправити данні користувача з форми на сервер, після натискання на цю кнопку сторінка перезавантажиться
+     -->
+    <form class="reg-form">
+      <label
+        >Enter your name
+        <input type="text" placeholder="Enter your name" />
+      </label>
+      <label
+        >Enter your age
+        <input type="number" placeholder="Enter your age" />
+      </label>
+      <label
+        >Enter your email
+        <input type="email" placeholder="Enter your email" />
+      </label>
+      <label
+        >Enter your password
+        <input type="password" placeholder="Enter your password" />
+      </label>
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>
