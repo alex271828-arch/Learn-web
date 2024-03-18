@@ -24,6 +24,16 @@
   border: 0;
 }
 
+.reg-form .radio-label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+}
+.reg-form .radio-label input {
+  width: auto;
+}
+
 .reg-form button {
   margin-top: 15px;
   padding: 15px 10px;
