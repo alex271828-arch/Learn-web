@@ -40,9 +40,60 @@ header > .container {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  color: #3cb878;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
 }
 
 .links > a:not(:last-child) {
   display: inline-block;
   margin-right: 27px;
+}
+
+.links {
+  border-right: 1px solid #ffffffe5;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.login > p,
+.login > p > a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.login > p > a:hover {
+  color: #3cb878;
+}
+
+.links > a > svg path {
+  transition: 0.5s;
+}
+
+.links > a:hover > svg path {
+  fill: #3cb878;
+}
+
+main {
+  text-align: center;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 30px 40px;
+  display: inline-block;
+  margin-top: 100px;
+  box-shadow: 0px 4px 18px 0px #00000085;
 }
