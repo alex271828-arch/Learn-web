@@ -88,3 +88,20 @@ div {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.main-form {
+  margin: 100px auto;
+  width: 30%;
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-form input {
+  display: block;
+  margin: 5px auto;
+}
+
+.submit-btn {
+  margin: 10px auto;
+}
