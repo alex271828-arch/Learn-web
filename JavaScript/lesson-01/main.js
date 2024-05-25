@@ -62,7 +62,30 @@ console.log(a % b); // 1
 console.log(17 % 3); // 2
 console.log(2 ** 3); // 8
 
-
 console.log(100 + 50 - 2 * 5); // 140
 
 // += - комбіновані оператори
+
+let students = 150;
+// students = students + 50;
+students += 50;
+
+console.log(`Students amount: ${students}`);
+
+// template strings
+const firstName = "Rick";
+const lastName = "Sanches";
+// const fullName =  firstName + " " + lastName  // Rick Sanches
+const fullName = `${firstName} ${lastName}`; // Rick Sanches
+
+console.log(fullName);
+
+const companyName = "Cyberdyne Systems";
+const repairBots = 150;
+const defenceBots = 50;
+const msg = `${companyName} has ${repairBots + defenceBots} bots in stock`;
+// Cyberdyne Systems has 200 bots in stock
+
+console.log(msg);
+
+//* Coercion
