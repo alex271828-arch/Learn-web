@@ -88,4 +88,32 @@ const msg = `${companyName} has ${repairBots + defenceBots} bots in stock`;
 
 console.log(msg);
 
-//* Coercion
+let monke;
+console.log(monke);
+
+//* Coercion - перетворення типів даних з одного на інший
+// Два види:
+// - явне перетворення типів: використання спеціальних функцій для перетворення типу
+// - неявне перетворення типів: перетворення типу без участі розробника (під капотом)
+
+// - явне перетворення типів String()
+
+console.log(typeof 5); // number
+console.log(typeof "5"); // string
+console.log(typeof true); // boolean
+console.log(typeof "true"); // string
+
+console.log(typeof String(true)); // string
+console.log(String(true)); // "true"
+console.log(String(10));
+
+// - неявне перетворення типів
+
+console.log("5" + 3);
+// "5"(string) + 3(number) -> "5" + String(3) -> "5" + "3" = "53"
+
+console.log(true + "7"); // "true7"
+
+ console.log(1 + 5 + "8"); // 1 + 5 = 6 + "8" = "68"
+
+// console.log("Hello" + " world!"); // concat
