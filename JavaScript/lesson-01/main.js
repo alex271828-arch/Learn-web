@@ -114,6 +114,51 @@ console.log("5" + 3);
 
 console.log(true + "7"); // "true7"
 
- console.log(1 + 5 + "8"); // 1 + 5 = 6 + "8" = "68"
+console.log(1 + 5 + "8"); // 1 + 5 = 6 + "8" = "68"
 
 // console.log("Hello" + " world!"); // concat
+
+console.log(10 - 3 + "9"); // 7 + "9" = String(7) + "9" = "7" + "9" = "79"
+
+//* Number() - функція, яка явно перетворює значення на число, якщо значення перетворити на число неможливо - отримаємо NaN(not a number)
+
+console.log(Number("5")); // string -> number
+console.log(Number(true)); // boolean -> number(1)
+console.log(Number(false)); // boolean -> number(0)
+console.log(Number(null)); // null -> number(0)
+console.log(Number(undefined)); // undefined -> number(NaN)
+console.log(Number("Alex")); // string -> number(NaN)
+
+console.log("5" * 2); // "5"(string) * 2(number) = Number("5") * 2 = 5 * 2 = 10(number)
+console.log("15" - 3); // 12
+console.log(5 + true); // 5 + Number(true) = 5 + 1 = 6
+
+//! ========== Оператори порівнянь ==========
+
+console.log(5 > 4); // true
+console.log(10 >= 10); // true
+console.log(5 < 5); // false
+console.log(10 > "7"); // true
+console.log("2" > "12"); // true -> 50 > 49
+
+console.log("2".charCodeAt(0)); // 50
+console.log("1".charCodeAt(0)); // 49
+console.log("a".charCodeAt(0)); // 97
+console.log("A".charCodeAt(0)); // 65
+
+// === - оператор суворої рівності. Він повертає тру тоді, коли всі значення одного типу і рівні між собою. Якщо тип даних значень різний - повертається фолс
+
+console.log(5 === 5); // true
+console.log(5 === "5"); // number === string - false
+
+console.log("hello" === "hello"); // true
+console.log("Hello" === "hello"); // false
+console.log(0 === false); // number === boolean - false
+console.log(true + 1 === 2); // true + 1 = 1 + 1 = 2
+// 2 === 2 -> true
+
+console.log(null === undefined); // false
+
+console.log("13" === 1 + "3"); 
+// 1. 1 + "3" = "13"
+// 2. "13" === "13" - true
