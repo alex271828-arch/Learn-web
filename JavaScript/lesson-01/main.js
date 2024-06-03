@@ -247,6 +247,29 @@ function add(a, b) {
   console.log(`${a} + ${b} = ${Number(a) + Number(b)}`);
 }
 
-add(502, 287589435697)
-add(2, "5")
-add("10", 4)
+add(502, 287589435697);
+add(2, "5");
+add("10", 4);
+
+//* будь-яка фукнція повинна повертати якийсь результат своєї роботи (якесь значення після виклику фукнції). За замовчуванням функції повертають значення undefined, але, якщо ми хочемо повернути своє власне значення - ми можемо використати оператор return. Цей оператор робить 2 важиливі дії: 1 - зупиняє виконання фукнції, 2 - повертає результат роботи фіукнції у зовнішній код
+
+function multNumbers(a, b) {
+  return a * b;
+}
+
+multNumbers(5, 3);
+
+const result = multNumbers(15, 32);
+console.log(result + 10);
+
+// calculateCircle(r) -> S, C
+
+function calculateCircle(r) {
+  const S = Math.PI * (r * r);
+  const C = 2 * Math.PI * r;
+  const D = r * 2
+  console.log(`S = ${S.toFixed(2)}\nC = ${C.toFixed(2)}\nD = ${D}\nr = ${r}`);
+}
+
+calculateCircle(5);
+calculateCircle(10);
