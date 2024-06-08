@@ -44,14 +44,68 @@ if (minutes === 0) {
   console.log(`${hours} г. ${minutes} хв.`);
 }
 
-
 /**
  * Напиши скрипт для відображення часу дедлайну здачі проекту. Використовуй if...else.
  *
  * Якщо до дедлайну 0 днів - виведи рядок "Today"
  * Якщо до дедлайну 1 день - виведи рядок "Tomorrow"
- * Якщо до дедлайну 2 дні - виведи рядок "Overmorrow"
+ * Якщо до дедлайну 2 дні - виведи рядок "aftertomorrow"
  * Якщо до дедлайну 3+ днів - виведи рядок "Date in the future"
  */
 
-const daysUntilDeadline = 5;
+const daysUntilDeadline = 4;
+
+if (daysUntilDeadline === 0) {
+  console.log("Today");
+} else if (daysUntilDeadline === 1) {
+  console.log("Tomorrow");
+} else if (daysUntilDeadline === 2) {
+  console.log("aftertomorrow");
+} else {
+  console.log("Date in the future");
+}
+
+
+//* logical operators && boolean coercion
+
+// console.log(true + 1); // 2 - неявне перетворення типу
+// console.log(Number(true) + 1); // 2 - явне перетворення типу
+
+// true: any number exept zero, string with any symbol
+// false: 0, null, undefined, NaN, ""(empty string)
+
+// console.log(Boolean(5)); // true
+// console.log(Boolean(-5)); // true
+// console.log(Boolean(0)); // false
+// console.log(Boolean(null)); // false
+// console.log(Boolean(NaN)); // false
+// console.log(Boolean("hello")); // true
+// console.log(Boolean("")); // false
+// console.log(Boolean("false"));  // true
+// console.log(Boolean(" "));  // true
+
+//* logical OR (||) - повертає перше значення, яке конвертується у true, якщо такого немає - повертає останнє
+//* logical AND (&&) - повертає перше значення, яке конвертується у false, якщо такого немає - повертає останнє
+//* logical NOT (!) - змінює логічний тип значення на зворотнє
+
+
+//* logical NOT (!)
+
+console.log(!true); // false
+console.log(!false); // true
+console.log(!0); // !false -> true
+console.log(!"hello"); // !true -> false
+console.log(!""); // !false -> true
+console.log(!" "); //  !true -> false
+
+//* logical OR (||) - returns first true
+
+console.log(false || true); // true
+console.log(null || false || 0 || 10 || undefined); // 10
+// Boolean(null) -> false
+// Boolean(0) -> false
+// Boolean(10) -> true
+console.log(NaN || "" || "false" || true || -5); // "false"
+// Boolean(NaN) - false
+// Boolean("") - false
+// Boolean("false") - true
