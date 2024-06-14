@@ -157,3 +157,62 @@ if (canAccessContent) {
 } else {
   console.log("Bye bye");
 }
+
+console.log(!0); // true
+console.log(!"false"); // false
+console.log(!NaN); // true
+
+console.log(0 || 1 || true || "hello" || "" || NaN); // 1
+console.log(0 || false || "" || NaN || undefined); // undefined
+
+console.log(1 && "h" && "" && null && 4); // ""
+console.log(-9 && !null && "false" && true && 4.5); // 4.5
+
+const isOnline = true;
+const isFriend = true;
+const isDnd = false;
+
+const canOpenChat = isOnline && isFriend && !isDnd;
+
+console.log("Can open chat?", canOpenChat);
+
+//!
+console.clear();
+
+const string = "Hello World!";
+
+//* toLowerCase/toUpperCase - приводить рядок до верхнього або нижнього регістру
+
+console.log(string.toLowerCase());
+console.log(string.toUpperCase());
+
+//* trim() - видаляє зайві пробіли на початку та у кінці рядку
+
+console.log("     hello world!         ".trim());
+
+//* indexOf(value) - повертає індекст початку входження підрядка value(індекси починаютьяс з 0). Якщо підрядок не знайдено - повертаємо -1
+
+console.log("hello".indexOf("e")); // 1
+console.log("hello world".indexOf("world")); // 6
+console.log("hello world".indexOf("x")); // -1
+
+//* includes(value) - перевіряє чи є значення value у рядку, якщо є - повертає true, якщо немає - повертає false
+
+const games = "Roblox, Minecraft, Fortnite, CS:go, Clash od clans, PubG";
+
+console.log(
+  "is user play Minecraft?",
+  games.toLowerCase().includes("minecraft")
+);
+console.log("is user play Roblox?", games.toLowerCase().includes("roblox"));
+console.log("is user play WOT?", games.toLowerCase().includes("wot"));
+
+//* startsWith(value) - перевіряє чи починається рядок з підрядка value, якщо починається - то повертає тру, якщо ні - повертає фолс
+
+//* endsWith(value) -  перевіряє чи закінчується рядок підрядком value, якщо так - то повертає тру, якщо ні - повертає фолс
+
+const url = "https://google.ua";
+
+console.log("is site secure?", url.startsWith("https"));
+
+console.log("is site ends with com?", url.endsWith("com"));
