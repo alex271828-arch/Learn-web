@@ -216,3 +216,57 @@ const url = "https://google.ua";
 console.log("is site secure?", url.startsWith("https"));
 
 console.log("is site ends with com?", url.endsWith("com"));
+
+//* .slice(start, end) - повертає копію підрядка починаючи з індексу start і закінчуючи індексом end, але не включно. [start, end), якщо не передати значення end, то воно буде копіювати до кінця усього рядка.
+
+const msg = "I love JavaScript!";
+
+console.log(msg.slice(2, 6)); // love
+console.log(msg.slice(7, -1)); // JavaScript
+console.log(msg.slice(7, 11)); // Java
+
+//* пошук спам слів у повідомленні. НАпиши фукнцію яка приймає повідомлення і перевіряє чи є у реченні заборонене слово. У нас буде два заборонених слова: "spam", "sale", Якщо у повідомленні буде хоча б одне з цих двох слів то фукнція повинна повернути фолс, якщо ж спам слів немає - фукнція повертає тру.
+
+function doesMsgContainsSpamWords(message) {
+  const blacklistedWord1 = "spam";
+  const blacklistedWord2 = "sale";
+
+  message = message.toLowerCase();
+
+  return (
+    message.includes(blacklistedWord1) || message.includes(blacklistedWord2)
+  );
+}
+
+const string1 =
+  "Hello, I'm Prince Abdul, this is not spam, I'm offering you a million!";
+const string2 = "Biggest SALE this week, don't miss out!";
+const string3 = "#fatlivesmatter advertising campaign";
+
+console.log(doesMsgContainsSpamWords(string1)); // true
+console.log(doesMsgContainsSpamWords(string2)); // true
+console.log(doesMsgContainsSpamWords(string3)); // false
+
+console.clear();
+
+//! LOOPS
+
+//* for loop
+// for(ініціалізація; умова продовження циклу; пост вираз)
+
+// for(let i = 0; i < 10; i +=1) {
+// loop body
+// }
+
+console.log("=== With loop ===");
+for (let i = 0; i < 10; i += 1) {
+  console.log(i, "Hello world!");
+}
+
+console.log("=== Without loop ===");
+console.log("Hello world!");
+console.log("Hello world!");
+console.log("Hello world!");
+console.log("Hello world!");
+console.log("Hello world!");
+console.log("Hello world!");
