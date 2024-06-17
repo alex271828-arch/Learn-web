@@ -247,8 +247,6 @@ console.log(doesMsgContainsSpamWords(string1)); // true
 console.log(doesMsgContainsSpamWords(string2)); // true
 console.log(doesMsgContainsSpamWords(string3)); // false
 
-console.clear();
-
 //! LOOPS
 
 //* for loop
@@ -258,11 +256,6 @@ console.clear();
 // loop body
 // }
 
-console.log("=== With loop ===");
-for (let i = 0; i < 10; i += 1) {
-  console.log(i, "Hello world!");
-}
-
 console.log("=== Without loop ===");
 console.log("Hello world!");
 console.log("Hello world!");
@@ -270,3 +263,57 @@ console.log("Hello world!");
 console.log("Hello world!");
 console.log("Hello world!");
 console.log("Hello world!");
+
+console.log("=== With loop ===");
+for (let i = 1; i <= 5; i += 1) {
+  console.log(i, "Hello world!");
+}
+// Ітерація - це одне виконання тіла циклу
+/*
+1. for (let i = 1; i <= 5 (true); i += 1) {
+  console.log(i = 1, "Hello world!");
+}
+2. for (let i = 2; 2 <= 5 (true); i += 1) {
+  console.log(i = 2, "Hello world!");
+}
+3. for (let i = 3; 3 <= 5 (true); i += 1) {
+  console.log(i = 3, "Hello world!");
+}
+4. for (let i = 4; 4 <= 5 (true); i += 1) {
+  console.log(i = 4, "Hello world!");
+}
+5. for (let i = 5; 5 <= 5 (true); i += 1) {
+  console.log(i = 5, "Hello world!");
+}
+6. for (let i = 6; 6 <= 5 (false); i += 1) // the end
+*/
+
+for (let i = 10; i >= 1; i -= 1) {
+  console.log(i);
+}
+
+
+/**
+ * Напиши цикл for, який виводить у консоль браузера
+ * числа за зростанням від a до b, але тільки якщо число кратне 5.
+ */
+
+const a = 100;
+const b = 20;
+
+for (let i = b; i <= a; i += 1) {
+  if (i % 5 === 0) {
+    console.log(i);
+  }
+}
+console.clear();
+
+/*
+ * Напиши скрипт, який підраховує суму всіх парних чисел,
+ * які входять в діапазон чисел у змінних від min до max.
+ * Наприклад, якщо min=0 и max=5, то діапазон 0-5, і в ньому два парних числа - 2 і 4, їх сума 6.
+ */
+
+const min = 0;
+const max = 5;
+let total = 0;
