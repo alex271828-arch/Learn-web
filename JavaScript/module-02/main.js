@@ -292,7 +292,6 @@ for (let i = 10; i >= 1; i -= 1) {
   console.log(i);
 }
 
-
 /**
  * Напиши цикл for, який виводить у консоль браузера
  * числа за зростанням від a до b, але тільки якщо число кратне 5.
@@ -315,5 +314,14 @@ console.clear();
  */
 
 const min = 0;
-const max = 5;
+const max = 15;
 let total = 0;
+
+for (let i = min; i <= max; i += 1) {
+  if (i % 2 === 0) {
+    console.log(i);
+    total += i;
+  }
+}
+
+console.log("Total:", total);
