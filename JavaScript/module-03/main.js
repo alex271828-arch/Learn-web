@@ -53,8 +53,6 @@ console.log(numbers.indexOf(90)); // 2
 console.log(numbers.indexOf(77)); // 5
 console.log(numbers.indexOf(999)); // -1
 
-console.clear();
-
 //* push(...values) - додає один або декілька елементів у кінець масиву
 
 const names = ["Alex", "Dima", "Alice", "Anna", "Petro", "Katya"];
@@ -68,3 +66,65 @@ names.pop();
 names.pop();
 
 console.log(names);
+
+console.clear();
+
+//! Перебір масиву
+
+const friends = ["Alex", "Dima", "Alice", "Anna", "Petro", "Katya"];
+
+console.log("=== LENGTH ===", friends.length);
+
+for (let i = 0; i < friends.length; i += 1) {
+  console.log(i, friends[i]);
+}
+
+//! for in - перебирає індекси масиву, ми його використовуємо тоді, коли вони нам потрібні
+
+for (const i in friends) {
+  console.log(i, friends[i]);
+}
+
+//! for of - перебирає значення масиву, ми його використовуємо тоді, коли індекси нам не потрібні
+
+for (const friend of friends) {
+  console.log(friend);
+}
+
+/**
+ * Напиши скрипт для перебору масиву fruits.
+ * Для кожного елемента масиву виведи в консоль рядок
+ * у форматі номер_елемента: значення_елемента.
+ * Нумерація елементів повинна починатися з 1.
+ */
+
+const fruits = ["🍎", "🍇", "🍑", "🍌", "🍋"];
+
+/*
+1: 🍎
+2: 🍇
+3: 🍑
+4: 🍌
+5: 🍋
+*/
+
+for (const i in fruits) {
+  console.log(`${Number(i) + 1}: ${fruits[i]}`);
+}
+
+/**
+ * Напиши скрипт для обчислення площі прямокутника зі сторонами,
+ * значення яких зберігаються у змінній values у вигляді рядка.
+ * Значення гарантовано розділені пробілом.
+ */
+
+const values = "8 11";
+const valuesArr = values.split(" ");
+const sideA = Number(valuesArr[0]);
+const sideB = Number(valuesArr[1]);
+const square = sideA * sideB
+
+console.log(`S = ${square}`);
+
+console.log(valuesArr);
+console.log(sideA, sideB);
