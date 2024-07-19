@@ -122,9 +122,55 @@ const values = "8 11";
 const valuesArr = values.split(" ");
 const sideA = Number(valuesArr[0]);
 const sideB = Number(valuesArr[1]);
-const square = sideA * sideB
+const square = sideA * sideB;
 
 console.log(`S = ${square}`);
 
 console.log(valuesArr);
 console.log(sideA, sideB);
+
+const arrOfNames = ["Alex", "Dima", "Diana", "Sergiy", "John"];
+
+console.log(arrOfNames);
+
+console.log(arrOfNames[3]);
+
+console.log(arrOfNames.length);
+
+console.log("============");
+
+for (let i = 0; i < arrOfNames.length; i += 1) {
+  console.log(i, arrOfNames[i]);
+}
+
+console.log("============");
+// for in
+
+for (const i in arrOfNames) {
+  console.log(i, arrOfNames[i]);
+}
+
+console.log("============");
+// for of
+
+for (const name of arrOfNames) {
+  console.log(name);
+}
+
+console.clear();
+
+/**
+ * Напиши скрипт, який підраховує суму всіх парних чисел у масиві.
+ */
+
+const numbersArr = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14]; // 82
+
+/*
+    Алгоритм:
+
+    1. створюємо змінну для результату, куди будемо накопичувати усю суму
+    2. запускаємо цикл для перебору кожного елементу масиву чисел for of
+    3. перевірка на те, чи є число парним за допомогою if, якщо число ділиться на 2 без остачі - воно парне
+    4. Якщо число є парним, то додаємо його до змінної результату (крок 1)
+*/
+
