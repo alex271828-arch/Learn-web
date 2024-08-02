@@ -24,11 +24,18 @@ function isEven(number) {
 4. повертаємо максимальне значення
 */
 
-function max(arr){
-    
+function max(arr) {
+  let maxValue = arr[0];
+  for (const num of arr) {
+    if (maxValue < num) {
+      maxValue = num;
+    }
+  }
+  return maxValue;
 }
 
-console.log(max([1, 3, 7, 2, 5])); // 7
+// console.log(max([1, 3, 7, 2, 5])); // 7
+// console.log(max([5, 9, 10, 33, 91, 4, 77])); // 91
 
 //! ==============
 
@@ -36,8 +43,14 @@ console.log(max([1, 3, 7, 2, 5])); // 7
 
 // Напиши функцію findElement(arr, target), яка приймає масив arr і елемент target, та повертає індекс елемента в масиві або -1, якщо елемент не знайдено.
 
-// console.log(findElement([1, 3, 7, 2, 5], 7)); // 2
-// console.log(findElement([1, 3, 7, 2, 5], 4)); // -1
+/*
+Алгоритм:
+1.
+
+*/
+
+console.log(findElement([1, 3, 7, 2, 5], 7)); // 2
+console.log(findElement([1, 3, 7, 2, 5], 4)); // -1
 
 //! ==============
 
