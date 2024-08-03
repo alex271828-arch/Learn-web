@@ -45,12 +45,22 @@ function max(arr) {
 
 /*
 Алгоритм:
-1.
-
+1. запускаємо цикл для перебору елементів масиву
+2. робимо перевірку, якщо поточний елемент масиву дорівнює нашому шуканому значенню - повертаємо його індекс
+3. якщо цикл закінчився і ми не знайшли індекс, о повертаємо -1
 */
 
-console.log(findElement([1, 3, 7, 2, 5], 7)); // 2
-console.log(findElement([1, 3, 7, 2, 5], 4)); // -1
+function findElement(arr,target){
+    for(const i in arr){
+        if (target === arr[i]){
+            return Number(i)
+        }
+    }
+    return -1;
+}
+
+// console.log(findElement([1, 3, 7, 2, 5], 7)); // 2
+// console.log(findElement([1, 3, 7, 2, 5], 4)); // -1
 
 //! ==============
 
