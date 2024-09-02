@@ -50,13 +50,13 @@ function max(arr) {
 3. якщо цикл закінчився і ми не знайшли індекс, о повертаємо -1
 */
 
-function findElement(arr,target){
-    for(const i in arr){
-        if (target === arr[i]){
-            return Number(i)
-        }
+function findElement(arr, target) {
+  for (const i in arr) {
+    if (target === arr[i]) {
+      return Number(i);
     }
-    return -1;
+  }
+  return -1;
 }
 
 // console.log(findElement([1, 3, 7, 2, 5], 7)); // 2
@@ -70,3 +70,42 @@ function findElement(arr,target){
 
 // console.log(isPalindrome("racecar")); // true
 // console.log(isPalindrome("hello")); // false
+
+// "hello" -> "olleh"
+// "racecar" -> "racecar"
+
+//! ==============
+
+// let age = 12;
+// const name = "Alex";
+
+// console.log(age);
+// age = 13;
+// // name = "Rick"
+// console.log(`hello my name is ${name} I am ${age} years old`);
+
+// const age = 17;
+//  Якщо вік менше за нуль або не є числом - вивести в консоль текст -не коректний вік. якщо вік менше за 18, вивести в консоль текст - немає доступу, якщо вік більше за 18 - вивести в консоль текст Вітаю на сайті.
+
+// if (age <= 0 || typeof age !== "number") {
+//   console.error("Invalid age");
+// } else if (age < 18) {
+//   console.error("Access denied");
+// } else {
+//   console.log("Welcome to the site!");
+// }
+
+// 1...10
+
+// console.log("start");
+// for (let i = 1; i <= 10; i += 1) {
+//   console.log(i);
+// }
+
+// console.log("end");
+
+// виведи всі непарні числа від 1 до 100 (1, 3, 5, 7, 9, 11 ... 99)
+
+for (let i = 1; i <= 100; i += 2) {
+  console.log(i);
+}
